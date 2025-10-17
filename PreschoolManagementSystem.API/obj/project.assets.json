@@ -1,0 +1,217 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "Microsoft.AspNetCore.OpenApi/9.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.17"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Microsoft.OpenApi/1.6.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "PreschoolManagementSystem.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "PreschoolManagementSystem.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PreschoolManagementSystem.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PreschoolManagementSystem.Application.dll": {}
+        }
+      },
+      "PreschoolManagementSystem.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/PreschoolManagementSystem.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PreschoolManagementSystem.Domain.dll": {}
+        }
+      },
+      "PreschoolManagementSystem.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "PreschoolManagementSystem.Application": "1.0.0",
+          "PreschoolManagementSystem.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PreschoolManagementSystem.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PreschoolManagementSystem.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNetCore.OpenApi/9.0.8": {
+      "sha512": "BwF9sQCKmvu93C/pmKxJjPhF5fFB23MEcgTsGL+7W3wKLYawS4lyFSL5/qh00IJzuADLf+1SmvxMaphbyZYqQQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.openapi/9.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.nuspec"
+      ]
+    },
+    "Microsoft.OpenApi/1.6.17": {
+      "sha512": "Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
+      "type": "package",
+      "path": "microsoft.openapi/1.6.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.6.17.nupkg.sha512",
+        "microsoft.openapi.nuspec"
+      ]
+    },
+    "PreschoolManagementSystem.Application/1.0.0": {
+      "type": "project",
+      "path": "../PreschoolManagementSystem.Application/PreschoolManagementSystem.Application.csproj",
+      "msbuildProject": "../PreschoolManagementSystem.Application/PreschoolManagementSystem.Application.csproj"
+    },
+    "PreschoolManagementSystem.Domain/1.0.0": {
+      "type": "project",
+      "path": "../PreschoolManagementSystem.Domain/PreschoolManagementSystem.Domain.csproj",
+      "msbuildProject": "../PreschoolManagementSystem.Domain/PreschoolManagementSystem.Domain.csproj"
+    },
+    "PreschoolManagementSystem.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../PreschoolManagementSystem.Infrastructure/PreschoolManagementSystem.Infrastructure.csproj",
+      "msbuildProject": "../PreschoolManagementSystem.Infrastructure/PreschoolManagementSystem.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "Microsoft.AspNetCore.OpenApi >= 9.0.8",
+      "PreschoolManagementSystem.Application >= 1.0.0",
+      "PreschoolManagementSystem.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\babib\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj",
+      "projectName": "PreschoolManagementSystem.API",
+      "projectPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj",
+      "packagesPath": "C:\\Users\\babib\\.nuget\\packages\\",
+      "outputPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\babib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Application\\PreschoolManagementSystem.Application.csproj": {
+              "projectPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Application\\PreschoolManagementSystem.Application.csproj"
+            },
+            "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Infrastructure\\PreschoolManagementSystem.Infrastructure.csproj": {
+              "projectPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Infrastructure\\PreschoolManagementSystem.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": {
+            "target": "Package",
+            "version": "[9.0.8, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

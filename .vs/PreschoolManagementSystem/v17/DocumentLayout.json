@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PreschoolManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|d:\\preschoolmanagementsystem\\preschoolmanagementsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|solutionrelative:preschoolmanagementsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\Program.cs",
+              "RelativeDocumentMoniker": "PreschoolManagementSystem.API\\Program.cs",
+              "ToolTip": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\Program.cs",
+              "RelativeToolTip": "PreschoolManagementSystem.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T05:03:13.177Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

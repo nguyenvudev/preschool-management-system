@@ -1,0 +1,17 @@
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\bin\Debug\net9.0\PreschoolManagementSystem.Infrastructure.deps.json
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\bin\Debug\net9.0\PreschoolManagementSystem.Infrastructure.dll
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\bin\Debug\net9.0\PreschoolManagementSystem.Infrastructure.pdb
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\bin\Debug\net9.0\PreschoolManagementSystem.Application.dll
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\bin\Debug\net9.0\PreschoolManagementSystem.Domain.dll
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\bin\Debug\net9.0\PreschoolManagementSystem.Application.pdb
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\bin\Debug\net9.0\PreschoolManagementSystem.Domain.pdb
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\obj\Debug\net9.0\PreschoolManagementSystem.Infrastructure.csproj.AssemblyReference.cache
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\obj\Debug\net9.0\PreschoolManagementSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\obj\Debug\net9.0\PreschoolManagementSystem.Infrastructure.AssemblyInfoInputs.cache
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\obj\Debug\net9.0\PreschoolManagementSystem.Infrastructure.AssemblyInfo.cs
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\obj\Debug\net9.0\PreschoolManagementSystem.Infrastructure.csproj.CoreCompileInputs.cache
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\obj\Debug\net9.0\Preschoo.05AD3017.Up2Date
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\obj\Debug\net9.0\PreschoolManagementSystem.Infrastructure.dll
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\obj\Debug\net9.0\refint\PreschoolManagementSystem.Infrastructure.dll
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\obj\Debug\net9.0\PreschoolManagementSystem.Infrastructure.pdb
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\obj\Debug\net9.0\ref\PreschoolManagementSystem.Infrastructure.dll

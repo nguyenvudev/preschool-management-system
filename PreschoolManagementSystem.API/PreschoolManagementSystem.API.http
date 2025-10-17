@@ -1,0 +1,6 @@
+@PreschoolManagementSystem.API_HostAddress = http://localhost:5290
+
+GET {{PreschoolManagementSystem.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

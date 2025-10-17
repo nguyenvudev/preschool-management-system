@@ -1,0 +1,299 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj": {}
+  },
+  "projects": {
+    "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj",
+        "projectName": "PreschoolManagementSystem.API",
+        "projectPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj",
+        "packagesPath": "C:\\Users\\babib\\.nuget\\packages\\",
+        "outputPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\babib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Application\\PreschoolManagementSystem.Application.csproj": {
+                "projectPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Application\\PreschoolManagementSystem.Application.csproj"
+              },
+              "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Infrastructure\\PreschoolManagementSystem.Infrastructure.csproj": {
+                "projectPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Infrastructure\\PreschoolManagementSystem.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Application\\PreschoolManagementSystem.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Application\\PreschoolManagementSystem.Application.csproj",
+        "projectName": "PreschoolManagementSystem.Application",
+        "projectPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Application\\PreschoolManagementSystem.Application.csproj",
+        "packagesPath": "C:\\Users\\babib\\.nuget\\packages\\",
+        "outputPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\babib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Domain\\PreschoolManagementSystem.Domain.csproj": {
+                "projectPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Domain\\PreschoolManagementSystem.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Domain\\PreschoolManagementSystem.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Domain\\PreschoolManagementSystem.Domain.csproj",
+        "projectName": "PreschoolManagementSystem.Domain",
+        "projectPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Domain\\PreschoolManagementSystem.Domain.csproj",
+        "packagesPath": "C:\\Users\\babib\\.nuget\\packages\\",
+        "outputPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\babib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Infrastructure\\PreschoolManagementSystem.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Infrastructure\\PreschoolManagementSystem.Infrastructure.csproj",
+        "projectName": "PreschoolManagementSystem.Infrastructure",
+        "projectPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Infrastructure\\PreschoolManagementSystem.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\babib\\.nuget\\packages\\",
+        "outputPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\babib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Application\\PreschoolManagementSystem.Application.csproj": {
+                "projectPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Application\\PreschoolManagementSystem.Application.csproj"
+              },
+              "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Domain\\PreschoolManagementSystem.Domain.csproj": {
+                "projectPath": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.Domain\\PreschoolManagementSystem.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
