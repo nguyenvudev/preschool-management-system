@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("PreschoolManagementSystem.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5452b0486efc418a32e88eb1a74abf2fabf11ac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4781a269ea20c656e9b9d5790db9316169b1bce7")]
 [assembly: System.Reflection.AssemblyProductAttribute("PreschoolManagementSystem.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PreschoolManagementSystem.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
