@@ -13,3 +13,4 @@ D:\PreschoolManagementSystem\PreschoolManagementSystem.Application\obj\Debug\net
 D:\PreschoolManagementSystem\PreschoolManagementSystem.Application\obj\Debug\net9.0\refint\PreschoolManagementSystem.Application.dll
 D:\PreschoolManagementSystem\PreschoolManagementSystem.Application\obj\Debug\net9.0\PreschoolManagementSystem.Application.pdb
 D:\PreschoolManagementSystem\PreschoolManagementSystem.Application\obj\Debug\net9.0\ref\PreschoolManagementSystem.Application.dll
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Application\obj\Debug\net9.0\PreschoolManagementSystem.Application.sourcelink.json

@@ -9,3 +9,4 @@ D:\PreschoolManagementSystem\PreschoolManagementSystem.Domain\obj\Debug\net9.0\P
 D:\PreschoolManagementSystem\PreschoolManagementSystem.Domain\obj\Debug\net9.0\refint\PreschoolManagementSystem.Domain.dll
 D:\PreschoolManagementSystem\PreschoolManagementSystem.Domain\obj\Debug\net9.0\PreschoolManagementSystem.Domain.pdb
 D:\PreschoolManagementSystem\PreschoolManagementSystem.Domain\obj\Debug\net9.0\ref\PreschoolManagementSystem.Domain.dll
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Domain\obj\Debug\net9.0\PreschoolManagementSystem.Domain.sourcelink.json

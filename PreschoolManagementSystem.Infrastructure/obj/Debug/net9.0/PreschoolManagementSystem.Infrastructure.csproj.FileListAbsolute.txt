@@ -15,3 +15,4 @@ D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\obj\Debug\
 D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\obj\Debug\net9.0\refint\PreschoolManagementSystem.Infrastructure.dll
 D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\obj\Debug\net9.0\PreschoolManagementSystem.Infrastructure.pdb
 D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\obj\Debug\net9.0\ref\PreschoolManagementSystem.Infrastructure.dll
+D:\PreschoolManagementSystem\PreschoolManagementSystem.Infrastructure\obj\Debug\net9.0\PreschoolManagementSystem.Infrastructure.sourcelink.json

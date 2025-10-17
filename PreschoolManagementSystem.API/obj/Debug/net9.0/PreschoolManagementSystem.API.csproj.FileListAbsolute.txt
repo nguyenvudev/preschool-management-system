@@ -36,3 +36,7 @@ D:\PreschoolManagementSystem\PreschoolManagementSystem.API\obj\Debug\net9.0\refi
 D:\PreschoolManagementSystem\PreschoolManagementSystem.API\obj\Debug\net9.0\PreschoolManagementSystem.API.pdb
 D:\PreschoolManagementSystem\PreschoolManagementSystem.API\obj\Debug\net9.0\PreschoolManagementSystem.API.genruntimeconfig.cache
 D:\PreschoolManagementSystem\PreschoolManagementSystem.API\obj\Debug\net9.0\ref\PreschoolManagementSystem.API.dll
+D:\PreschoolManagementSystem\PreschoolManagementSystem.API\obj\Debug\net9.0\PreschoolManagementSystem.API.sourcelink.json
+D:\PreschoolManagementSystem\PreschoolManagementSystem.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\PreschoolManagementSystem\PreschoolManagementSystem.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\PreschoolManagementSystem\PreschoolManagementSystem.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
