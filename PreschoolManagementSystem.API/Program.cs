@@ -1,4 +1,6 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using PreschoolManagementSystem.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,12 +28,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Preschool Management API v1");
-        c.RoutePrefix = string.Empty; // Mở Swagger tại trang gốc (http://localhost:5000)
+        c.RoutePrefix = string.Empty; 
     });
 }
+
+builder.Services.AddDbContext<PreschoolDbContext>(option =>{
+    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+});
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
