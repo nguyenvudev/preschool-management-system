@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PreschoolManagementSystem.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4781a269ea20c656e9b9d5790db9316169b1bce7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ce47e04793bbb74b32d513e87553d275d844ff6")]
 [assembly: System.Reflection.AssemblyProductAttribute("PreschoolManagementSystem.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PreschoolManagementSystem.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
