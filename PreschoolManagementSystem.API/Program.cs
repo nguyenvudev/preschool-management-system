@@ -1,13 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using PreschoolManagementSystem.Application.Interfaces;
+using PreschoolManagementSystem.Application.MappingProfiles;
 using PreschoolManagementSystem.Infrastructure.Data;
-
+using PreschoolManagementSystem.Infrastructure.Persistence;
+using PreschoolManagementSystem.Infrastructure.Repository;
+using PreschoolManagementSystem.Application;
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
-builder.Services.AddControllers();
 
-// Add Swagger
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -18,7 +20,10 @@ builder.Services.AddSwaggerGen(options =>
         Description = "API for managing preschool system"
     });
 });
+builder.Services.AddApplication();
+builder.Services.AddPersistence(builder.Configuration);
 
+// Các Service khác
 var app = builder.Build();
 
 // Configure the HTTP request pipeline
@@ -32,9 +37,6 @@ if (app.Environment.IsDevelopment())
     });
 }
 
-builder.Services.AddDbContext<PreschoolDbContext>(option =>{
-    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
