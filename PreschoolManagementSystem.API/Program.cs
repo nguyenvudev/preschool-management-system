@@ -1,10 +1,5 @@
-using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using PreschoolManagementSystem.Application.Interfaces;
-using PreschoolManagementSystem.Application.MappingProfiles;
-using PreschoolManagementSystem.Infrastructure.Data;
 using PreschoolManagementSystem.Infrastructure.Persistence;
-using PreschoolManagementSystem.Infrastructure.Repository;
 using PreschoolManagementSystem.Application;
 var builder = WebApplication.CreateBuilder(args);
 

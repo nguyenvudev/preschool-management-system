@@ -2,7 +2,10 @@ namespace PreschoolManagementSystem.Domain.Enums;
 
 public enum UserRole
 {
-    Admin,
-    Teacher,
-    Parent 
+    Admin = 1,
+    Teacher = 2,
+    Parent = 3,
+    MedicalStaff = 4, 
+    Accountant = 5,
+    Staff = 6
 }

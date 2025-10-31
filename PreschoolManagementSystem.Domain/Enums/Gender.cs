@@ -1,8 +1,10 @@
-namespace PreschoolManagementSystem.Domain.Enums;
-
-public enum Gender
+namespace PreschoolManagementSystem.Domain.Enums
 {
-    Male,
-    Female
 
+    public enum Gender
+    {
+        Male = 1,
+        Female = 2
+
+    }
 }

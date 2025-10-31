@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("PreschoolManagementSystem.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+01687e3b83f18e4e87de29a9c4e92c47e55ab430")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74eccaab15ca6a42dfd16f1f084fb96f1c50381e")]
 [assembly: System.Reflection.AssemblyProductAttribute("PreschoolManagementSystem.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PreschoolManagementSystem.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,6 @@
 using AutoMapper;
 using PreschoolManagementSystem.Domain.Entities;
-using PreschoolManagementSystem.Application.Dtos;
+using PreschoolManagementSystem.Application.DTOs.Students;
 
 namespace PreschoolManagementSystem.Application.MappingProfiles
 {

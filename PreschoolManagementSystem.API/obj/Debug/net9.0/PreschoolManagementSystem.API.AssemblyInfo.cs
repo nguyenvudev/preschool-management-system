@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PreschoolManagementSystem.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0e0914a4fad6ddde639eadb822343b653754859")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74eccaab15ca6a42dfd16f1f084fb96f1c50381e")]
 [assembly: System.Reflection.AssemblyProductAttribute("PreschoolManagementSystem.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PreschoolManagementSystem.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

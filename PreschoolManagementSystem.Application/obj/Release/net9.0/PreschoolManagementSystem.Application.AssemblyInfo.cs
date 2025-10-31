@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PreschoolManagementSystem.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74eccaab15ca6a42dfd16f1f084fb96f1c50381e")]
 [assembly: System.Reflection.AssemblyProductAttribute("PreschoolManagementSystem.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PreschoolManagementSystem.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
