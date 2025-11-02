@@ -1240,6 +1240,12 @@ namespace PreschoolManagementSystem.Infrastructure.Migrations
                     b.Property<Guid>("PreschoolId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("RefreshTokenExpiryTime")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("Role")
                         .HasColumnType("int");
 
@@ -1464,7 +1470,7 @@ namespace PreschoolManagementSystem.Infrastructure.Migrations
                     b.HasOne("PreschoolManagementSystem.Domain.Entities.User", "ReceivedBy")
                         .WithMany()
                         .HasForeignKey("ReceivedById")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Invoice");

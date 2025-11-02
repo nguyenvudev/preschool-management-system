@@ -12,8 +12,8 @@ using PreschoolManagementSystem.Infrastructure.Data;
 namespace PreschoolManagementSystem.Infrastructure.Migrations
 {
     [DbContext(typeof(PreschoolDbContext))]
-    [Migration("20251031012921_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20251101031908_AddRefreshTokenToUser")]
+    partial class AddRefreshTokenToUser
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -1243,6 +1243,12 @@ namespace PreschoolManagementSystem.Infrastructure.Migrations
                     b.Property<Guid>("PreschoolId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("RefreshTokenExpiryTime")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("Role")
                         .HasColumnType("int");
 
@@ -1467,7 +1473,7 @@ namespace PreschoolManagementSystem.Infrastructure.Migrations
                     b.HasOne("PreschoolManagementSystem.Domain.Entities.User", "ReceivedBy")
                         .WithMany()
                         .HasForeignKey("ReceivedById")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Invoice");

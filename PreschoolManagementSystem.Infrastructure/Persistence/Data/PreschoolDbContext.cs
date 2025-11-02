@@ -12,6 +12,7 @@ public class PreschoolDbContext : DbContext
 {
     public PreschoolDbContext(DbContextOptions<PreschoolDbContext> options) : base(options)
     {
+        
 
     }
     public DbSet<User> Users => Set<User>();
@@ -41,6 +42,21 @@ public class PreschoolDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
+         base.OnModelCreating(modelBuilder);
+
+
+
+         modelBuilder.Entity<PaymentRecord>()
+        .HasOne(pr => pr.ReceivedBy)
+        .WithMany()
+        .HasForeignKey(pr => pr.ReceivedById)
+        .OnDelete(DeleteBehavior.Restrict);
+
+    modelBuilder.Entity<PaymentRecord>()
+        .HasOne(pr => pr.Invoice)
+        .WithMany(i => i.PaymentRecords)
+        .HasForeignKey(pr => pr.InvoiceId)
+        .OnDelete(DeleteBehavior.Cascade);
 
         // Apply entity configurations automatically
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());

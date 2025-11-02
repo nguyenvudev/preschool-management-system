@@ -5,9 +5,7 @@ using PreschoolManagementSystem.Application.Common.Models;
 namespace PreschoolManagementSystem.Infrastructure.Extensions
 {
     public static class PagedListExtensions
-    {
-        // ✅ EF CORE EXTENSIONS - CHỈ Ở INFRASTRUCTURE LAYER
-        public static async Task<PagedList<T>> ToPagedListAsync<T>(
+    {        public static async Task<PagedList<T>> ToPagedListAsync<T>(
             this IQueryable<T> source, 
             int page, 
             int pageSize)

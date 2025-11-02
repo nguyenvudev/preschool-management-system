@@ -2,12 +2,16 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using PreschoolManagementSystem.Application.Interfaces;
 using PreschoolManagementSystem.Application.Interfaces.Repositories;
 using PreschoolManagementSystem.Application.Services;
 using PreschoolManagementSystem.Infrastructure.Data;
 using PreschoolManagementSystem.Infrastructure.Repositories;
 using PreschoolManagementSystem.Infrastructure.Services;
+using PreschoolManagementSystem.Infrastructure.Repository;
 
 namespace PreschoolManagementSystem.Infrastructure.Persistence
 {
@@ -21,7 +25,10 @@ namespace PreschoolManagementSystem.Infrastructure.Persistence
             // services.AddScoped<IStudentRepository, StudentRepository>();
 
             // Application Services
-              // Repositories
+            // Repositories
+           services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddScoped<IStudentService, StudentService>();
+
             services.AddScoped<IUserRepository, UserRepository>();
             // services.AddScoped<IStudentRepository, StudentRepository>();
             // services.AddScoped<IClassroomRepository, ClassroomRepository>();
@@ -36,6 +43,32 @@ namespace PreschoolManagementSystem.Infrastructure.Persistence
             // services.AddScoped<IHealthService, HealthService>();
 
 
+
+            var jwtSettings = configuration.GetSection("Jwt");
+            var key = Encoding.UTF8.GetBytes(jwtSettings["Key"]!);
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(options =>
+            {
+                options.RequireHttpsMetadata = false;
+                options.SaveToken = true;
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = jwtSettings["Issuer"],
+                    ValidAudience = jwtSettings["Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(key)
+
+   
+                };
+            });
             return services;
         }
     }

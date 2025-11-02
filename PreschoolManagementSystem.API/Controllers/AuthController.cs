@@ -1,5 +1,6 @@
 // WebAPI/Controllers/AuthController.cs
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PreschoolManagementSystem.Application.Common.Models;
 using PreschoolManagementSystem.Application.DTOs.Auth;
@@ -29,12 +30,12 @@ namespace PreschoolManagementSystem.WebAPI.Controllers
             try
             {
                 var result = await _authService.LoginAsync(request);
-                
+
                 if (!result.Success)
                     return BadRequest(ApiResponse<AuthResponse>.ErrorResult(result.Message));
 
                 SetRefreshTokenCookie(result.RefreshToken!);
-                
+
                 var response = new AuthResponse
                 {
                     Token = result.Token!,
@@ -56,17 +57,17 @@ namespace PreschoolManagementSystem.WebAPI.Controllers
             try
             {
                 var refreshToken = Request.Cookies["refreshToken"];
-                
+
                 if (string.IsNullOrEmpty(refreshToken))
                     return Unauthorized(ApiResponse<AuthResponse>.ErrorResult("Token không hợp lệ"));
 
                 var result = await _authService.RefreshTokenAsync(refreshToken);
-                
+
                 if (!result.Success)
                     return Unauthorized(ApiResponse<AuthResponse>.ErrorResult(result.Message));
 
                 SetRefreshTokenCookie(result.RefreshToken!);
-                
+
                 var response = new AuthResponse
                 {
                     Token = result.Token!,
@@ -88,7 +89,7 @@ namespace PreschoolManagementSystem.WebAPI.Controllers
             try
             {
                 var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                
+
                 if (userId != null && Guid.TryParse(userId, out var userGuid))
                     await _authService.RevokeRefreshTokenAsync(userGuid);
 
@@ -108,12 +109,12 @@ namespace PreschoolManagementSystem.WebAPI.Controllers
             try
             {
                 var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                
+
                 if (string.IsNullOrEmpty(userId) || !Guid.TryParse(userId, out var userGuid))
                     return Unauthorized(ApiResponse<UserDto>.ErrorResult("Không xác thực được người dùng"));
 
                 var user = await _authService.GetUserProfileAsync(userGuid);
-                
+
                 if (user == null)
                     return NotFound(ApiResponse<UserDto>.ErrorResult("Không tìm thấy người dùng"));
 
@@ -132,13 +133,13 @@ namespace PreschoolManagementSystem.WebAPI.Controllers
             try
             {
                 var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-                
+
                 if (string.IsNullOrEmpty(userId) || !Guid.TryParse(userId, out var userGuid))
                     return Unauthorized(ApiResponse<object>.ErrorResult("Không xác thực được người dùng"));
 
                 request.UserId = userGuid;
                 var result = await _authService.ChangePasswordAsync(request);
-                
+
                 if (!result.Success)
                     return BadRequest(ApiResponse<object>.ErrorResult(result.Message));
 
@@ -161,8 +162,41 @@ namespace PreschoolManagementSystem.WebAPI.Controllers
                 SameSite = SameSiteMode.Strict,
                 Path = "/"
             };
-            
+
             Response.Cookies.Append("refreshToken", refreshToken, cookieOptions);
         }
+
+        // Thêm vào AuthController.cs
+
+[HttpPost("register")]
+[AllowAnonymous] // Không cần token để đăng ký
+public async Task<ActionResult<ApiResponse<AuthResponse>>> Register(RegisterRequest request)
+{
+    try
+    {
+        var result = await _authService.RegisterAsync(request);
+        
+        if (!result.Success)
+            return BadRequest(ApiResponse<AuthResponse>.ErrorResult(result.Message));
+
+        SetRefreshTokenCookie(result.RefreshToken!);
+        
+        var response = new AuthResponse
+        {
+            Token = result.Token!,
+            User = result.User!
+        };
+
+        return Ok(ApiResponse<AuthResponse>.SuccessResult(response, "Đăng ký thành công"));
     }
+    catch (Exception ex)
+    {
+        _logger.LogError(ex, "Register error for {Email}", request.Email);
+        return StatusCode(500, ApiResponse<AuthResponse>.ErrorResult("Lỗi hệ thống"));
+    }
+}
+    }
+
+
+    
 }

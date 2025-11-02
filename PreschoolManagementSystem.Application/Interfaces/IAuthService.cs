@@ -9,11 +9,12 @@ namespace PreschoolManagementSystem.Application.Interfaces
 
 
         Task<AuthResult> LoginAsync(LoginRequest request);
+        Task<AuthResult> RegisterAsync(RegisterRequest request);
+
         Task<AuthResult> RefreshTokenAsync(string refreshToken);
         Task RevokeRefreshTokenAsync(Guid userId);
         Task<UserDto?> GetUserProfileAsync(Guid userId);
         Task<AuthResult> ChangePasswordAsync(ChangePasswordRequest request);
-        Task<AuthResult> RegisterAsync(RegisterUserRequest request);
 
     }
 }

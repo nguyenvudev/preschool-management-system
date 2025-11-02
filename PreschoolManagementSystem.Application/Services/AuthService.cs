@@ -119,47 +119,7 @@ namespace PreschoolManagementSystem.Application.Services
             }
         }
 
-        public async Task<AuthResult> RegisterAsync(RegisterUserRequest request)
-        {
-            try
-            {
-                // Check if email already exists
-                if (await _userRepository.EmailExistsAsync(request.Email))
-                {
-                    return new AuthResult { Success = false, Message = "Email đã tồn tại trong hệ thống" };
-                }
-
-                var user = new User
-                {
-                    Email = request.Email,
-                    PasswordHash = _passwordHasher.HashPassword(request.Password),
-                    FullName = request.FullName,
-                    Role = UserRole.Teacher, // Default role for new registrations
-                    PhoneNumber = request.PhoneNumber,
-                    PreschoolId = Guid.NewGuid(), // In real app, this should come from organization context
-                    IsActive = true
-                };
-
-                var createdUser = await _userRepository.AddAsync(user);
-                await _userRepository.SaveChangesAsync();
-
-                var userDto = _mapper.Map<UserDto>(createdUser);
-
-                _logger.LogInformation("New user registered: {Email}", request.Email);
-                return new AuthResult
-                {
-                    Success = true,
-                    Message = "Đăng ký tài khoản thành công",
-                    User = userDto
-                };
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error registering user: {Email}", request.Email);
-                return new AuthResult { Success = false, Message = "Đã xảy ra lỗi trong quá trình đăng ký" };
-            }
-        }
-
+       
         public async Task RevokeRefreshTokenAsync(Guid userId)
         {
             try
@@ -217,5 +177,50 @@ namespace PreschoolManagementSystem.Application.Services
                 return new AuthResult { Success = false, Message = "Đã xảy ra lỗi khi đổi mật khẩu" };
             }
         }
+
+    
+      public async Task<AuthResult> RegisterAsync(RegisterRequest request)
+    {
+        try
+        {
+            // Kiểm tra email đã tồn tại
+            var existingUser = await _userRepository.GetByEmailAsync(request.Email);
+            if (existingUser != null)
+                return AuthResult.ErrorResult("Email đã được sử dụng");
+
+            // Kiểm tra số điện thoại đã tồn tại
+            var existingPhone = await _userRepository.GetByPhoneNumberAsync(request.PhoneNumber);
+            if (existingPhone != null)
+                return AuthResult.ErrorResult("Số điện thoại đã được sử dụng");
+
+            // Map từ RegisterRequest sang User entity
+            var user = _mapper.Map<User>(request);
+            user.Id = Guid.NewGuid();
+            user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password);
+            user.IsActive = true;
+            user.CreatedAt = DateTime.UtcNow;
+
+            await _userRepository.AddAsync(user);
+
+            // Generate tokens
+            var token = _tokenService.GenerateToken(user);
+            var refreshToken = _tokenService.GenerateRefreshToken();
+
+            // Lưu refresh token
+            user.RefreshToken = refreshToken;
+            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
+            await _userRepository.UpdateAsync(user);
+
+            // Map User entity sang UserDto
+            var userDto = _mapper.Map<UserDto>(user);
+
+            return AuthResult.SuccessResult(token, refreshToken, userDto);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error during registration for {Email}", request.Email);
+            return AuthResult.ErrorResult("Đăng ký thất bại");
+        }
+    }
     }
 }

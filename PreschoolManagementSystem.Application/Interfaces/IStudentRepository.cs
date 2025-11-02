@@ -5,7 +5,7 @@ namespace PreschoolManagementSystem.Application.Interfaces
     public interface IStudentRepository
     {
         Task<IEnumerable<Students>> GetAllAsync();
-        Task<Students?> GetByIdAsync(int id);
+        Task<Students?> GetByIdAsync(Guid id);
 
         Task<List<Students>> GetByClassroomIdAsync(Guid classroomId);
         Task<List<Students>> GetStudentsWithHealthAlertsAsync();

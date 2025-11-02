@@ -1,6 +1,7 @@
 using AutoMapper;
 using PreschoolManagementSystem.Domain.Entities;
 using PreschoolManagementSystem.Application.DTOs.Students;
+using PreschoolManagementSystem.Application.DTOs.Student;
 
 namespace PreschoolManagementSystem.Application.MappingProfiles
 {
@@ -9,6 +10,9 @@ namespace PreschoolManagementSystem.Application.MappingProfiles
         public StudentProfile()
         {
             CreateMap<Students, StudentDto>().ReverseMap();
+            CreateMap<CreateStudentRequest, Students>();
+            CreateMap<UpdateStudentRequest, Students>();
+            CreateMap<Students, StudentDetailDto>();
         }
     }
 }

@@ -15,6 +15,13 @@ namespace PreschoolManagementSystem.Domain.Entities
         public Guid PreschoolId { get; set; }
 
         // Navigation
+
+       
+         public string? RefreshToken { get; set; }
+        public DateTime? RefreshTokenExpiryTime { get; set; }
+
+
+        
         public ICollection<RefreshToken> RefreshTokens { get; set; }
         public ICollection<AuditLog> AuditLogs { get; set; }
     }

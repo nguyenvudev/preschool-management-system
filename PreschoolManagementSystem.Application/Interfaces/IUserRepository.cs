@@ -12,7 +12,11 @@ namespace PreschoolManagementSystem.Application.Interfaces.Repositories
         Task<User?> GetByEmailAsync(string email);
         Task<List<User>> GetByRoleAsync(UserRole role);
         Task<List<User>> GetAllAsync();
-        Task<PagedList<User>> GetPagedAsync(UserQuery query);
+        Task<PagedList<User>> GetPagedAsync(int page, int pageSize, string? search, string? role);
+
+            Task<User?> GetByPhoneNumberAsync(string phoneNumber); 
+
+        
         Task<User> AddAsync(User user);
         Task UpdateAsync(User user);
         Task DeleteAsync(User user);

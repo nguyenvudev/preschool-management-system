@@ -1,4 +1,3 @@
-// Domain/Entities/PaymentRecord.cs
 using PreschoolManagementSystem.Domain.Enums;
 
 namespace PreschoolManagementSystem.Domain.Entities
