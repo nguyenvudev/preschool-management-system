@@ -12,6 +12,7 @@ namespace PreschoolManagementSystem.Application.DTOs.Common
         public int TotalPages { get; set; }
         public bool HasPrevious { get; set; }
         public bool HasNext { get; set; }
+        public int PageNumber { get; internal set; }
 
         public PagedResponse() { }
 

@@ -1,6 +1,8 @@
 // Domain/Entities/ChatMessage.cs
-namespace PreschoolManagementSystem.Domain.Entities
-{
+using PreschoolManagementSystem.Domain.Enums;
+
+namespace PreschoolManagementSystem.Domain.Entities;
+
     public class ChatMessage : BaseEntity
     {
         public Guid SessionId { get; set; }
@@ -20,21 +22,3 @@ namespace PreschoolManagementSystem.Domain.Entities
         public virtual ChatSession Session { get; set; } = null!;
     }
 
-    public enum MessageRole
-    {
-        User = 1,
-        Assistant = 2,
-        System = 3
-    }
-
-    public enum MessageType
-    {
-        Text = 1,
-        Suggestion = 2,
-        Warning = 3,
-        Advice = 4,
-        QuickReply = 5,
-        Image = 6,
-        Document = 7
-    }
-}

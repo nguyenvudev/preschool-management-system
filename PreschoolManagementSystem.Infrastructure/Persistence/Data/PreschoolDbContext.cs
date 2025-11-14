@@ -21,7 +21,7 @@ public class PreschoolDbContext : DbContext
     public DbSet<Students> students => Set<Students>();
     public DbSet<Classroom> Classrooms => Set<Classroom>();
     public DbSet<Attendance> Attendances => Set<Attendance>();
-    public DbSet<Schedule> Schedules => Set<Schedule>();
+    public DbSet<WeeklySchedule> Schedules => Set<WeeklySchedule>();
     public DbSet<HealthRecord> HealthRecords => Set<HealthRecord>();
     public DbSet<DevelopmentAssessment> DevelopmentAssessments => Set<DevelopmentAssessment>();
     public DbSet<Menu> Menus => Set<Menu>();

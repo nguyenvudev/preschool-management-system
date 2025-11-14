@@ -1,0 +1,4 @@
+namespace PreschoolManagementSystem.Domain.Entities
+{
+    
+}

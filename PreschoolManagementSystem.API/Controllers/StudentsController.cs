@@ -1,4 +1,5 @@
-// WebAPI/Controllers/StudentsController.cs
+using AutoMapper;
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PreschoolManagementSystem.Application.Common.Models;
@@ -6,6 +7,7 @@ using PreschoolManagementSystem.Application.DTOs.Common;
 using PreschoolManagementSystem.Application.DTOs.Health;
 using PreschoolManagementSystem.Application.DTOs.Student;
 using PreschoolManagementSystem.Application.DTOs.Students;
+using PreschoolManagementSystem.Application.Features.Students.Commands.CreateStudent;
 using PreschoolManagementSystem.Application.Interfaces;
 
 namespace PreschoolManagementSystem.WebAPI.Controllers
@@ -17,11 +19,17 @@ namespace PreschoolManagementSystem.WebAPI.Controllers
     {
         private readonly IStudentService _studentService;
         private readonly ILogger<StudentsController> _logger;
+        private readonly IMapper _mapper;
+        private readonly IMediator _mediator;
 
-        public StudentsController(IStudentService studentService, ILogger<StudentsController> logger)
+
+        public StudentsController(IStudentService studentService, ILogger<StudentsController> logger, IMediator mediator,
+            IMapper mapper)
         {
             _studentService = studentService;
             _logger = logger;
+            _mapper = mapper;
+            _mediator = mediator;
         }
 
         [HttpGet]
@@ -81,23 +89,38 @@ namespace PreschoolManagementSystem.WebAPI.Controllers
 
         [Authorize(Roles = "Admin,Teacher")]
         [HttpPost]
-        public async Task<ActionResult<ApiResponse<StudentDto>>> Create(CreateStudentRequest request)
+        public async Task<ActionResult<ApiResponse<StudentDto>>> Create ( [FromBody] CreateStudentRequest request)
         {
-            try
-            {
-                var student = await _studentService.CreateStudentAsync(request);
-                return CreatedAtAction(nameof(GetById), new { id = student.Id }, 
-                    ApiResponse<StudentDto>.SuccessResult(student, "Tạo học sinh thành công"));
-            }
-            catch (ArgumentException ex)
-            {
-                return BadRequest(ApiResponse<StudentDto>.ErrorResult(ex.Message));
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Create student error");
-                return StatusCode(500, ApiResponse<StudentDto>.ErrorResult("Lỗi tạo học sinh"));
-            }
+            // try
+            // {
+            //     var student = await _studentService.CreateStudentAsync(request);
+            //     return CreatedAtAction(nameof(GetById), new { id = student.Id }, 
+            //         ApiResponse<StudentDto>.SuccessResult(student, "Tạo học sinh thành công"));
+            // }
+            // catch (ArgumentException ex)
+            // {
+            //     return BadRequest(ApiResponse<StudentDto>.ErrorResult(ex.Message));
+            // }
+            // catch (Exception ex)
+            // {
+            //     _logger.LogError(ex, "Create student error");
+            //     return StatusCode(500, ApiResponse<StudentDto>.ErrorResult("Lỗi tạo học sinh"));
+            // }
+                        try
+                {
+                    var command = _mapper.Map<CreateStudentCommand>(request);
+                    var result = await _mediator.Send(command);
+                    
+                    if (result.Success)
+                        return CreatedAtAction(nameof(GetById), new { id = result.Data?.Id }, result);
+                    else
+                        return BadRequest(result); 
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogError(ex, "Create student error");
+                    return StatusCode(500, ApiResponse<StudentDto>.ErrorResult("Lỗi tạo học sinh"));
+                }
         }
 
         [Authorize(Roles = "Admin,Teacher")]

@@ -1,6 +1,6 @@
 // Domain/Entities/ChatSession.cs
 using PreschoolManagementSystem.Domain.Enums;
-
+using PreschoolManagementSystem.Domain.Entities;
 namespace PreschoolManagementSystem.Domain.Entities
 {
     public class ChatSession : BaseEntity

@@ -19,6 +19,7 @@ namespace PreschoolManagementSystem.Application.DTOs.Auth.Responses
                 Token = token,
                 RefreshToken = refreshToken,
                 User = user
+                
             };
         }
 

@@ -24,7 +24,6 @@ namespace PreschoolManagementSystem.Infrastructure.Repositories
             _logger = logger;
         }
 
-        #region CRUD cơ bản
 
         public async Task<User?> GetByIdAsync(Guid id)
         {
@@ -86,9 +85,9 @@ namespace PreschoolManagementSystem.Infrastructure.Repositories
             return await _context.SaveChangesAsync();
         }
 
-        #endregion
+    
 
-        #region Refresh Token
+
 
         public async Task AddRefreshTokenAsync(Guid userId, string refreshToken)
         {
@@ -161,9 +160,7 @@ namespace PreschoolManagementSystem.Infrastructure.Repositories
                 .ToListAsync();
         }
 
-        #endregion
-
-        #region Phân trang
+      
 
         public async Task<PagedList<User>> GetPagedAsync(int page = 1, int pageSize = 10, string? search = null, string? role = null)
         {
@@ -204,6 +201,5 @@ namespace PreschoolManagementSystem.Infrastructure.Repositories
             return await GetPagedAsync(query.Page, query.PageSize, query.Search, query.Role);
         }
 
-        #endregion
     }
 }

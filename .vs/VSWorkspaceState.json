@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\PreschoolManagementSystem.API"
   ],
-  "SelectedNode": "\\PreschoolManagementSystem.Infrastructure",
+  "SelectedNode": "\\PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj",
   "PreviewInSolutionExplorer": false
 }

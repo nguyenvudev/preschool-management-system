@@ -14,7 +14,7 @@ public class Students : BaseEntity
     public string? PlaceOfBirth { get; set; }
 
     public string? Address { get; set; }
-    public string? PhotoUrl { get; set; }
+    public string? PhotoUrl { get; set; }       
 
     public string? ParentName { get; set; }
     public string? ParentPhone { get; set; }
@@ -32,10 +32,10 @@ public class Students : BaseEntity
 
     // Navigation properties
  
-                public virtual Classroom? Classroom { get; set; }
+    public virtual Classroom? Classroom { get; set; }
 
-        // public virtual ICollection<Attendance> Attendances { get; set; } = new List<Attendance>();
-    // public virtual ICollection<HealthRecord> HealthRecords { get; set; } = new List<HealthRecord>();
-    // public virtual ICollection<NutritionRecord> NutritionRecords { get; set; } = new List<NutritionRecord>();
+    public virtual ICollection<Attendance> Attendances { get; set; } = new List<Attendance>();
+    public virtual ICollection<HealthRecord> HealthRecords { get; set; } = new List<HealthRecord>();
+    public virtual ICollection<NutritionRecord> NutritionRecords { get; set; } = new List<NutritionRecord>();
 }
 

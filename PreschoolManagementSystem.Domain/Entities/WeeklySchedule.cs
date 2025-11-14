@@ -1,7 +1,9 @@
 // Domain/Entities/Schedule.cs
+using PreschoolManagementSystem.Domain.Enums;
+
 namespace PreschoolManagementSystem.Domain.Entities
 {
-    public class Schedule : BaseEntity
+    public class WeeklySchedule : BaseEntity
     {
         public Guid ClassroomId { get; set; }
         public DayOfWeek DayOfWeek { get; set; }
@@ -17,11 +19,4 @@ namespace PreschoolManagementSystem.Domain.Entities
         public virtual User? Teacher { get; set; }
     }
 
-    public enum ScheduleType
-    {
-        Regular = 1,      // Lịch học thường ngày
-        Special = 2,      // Hoạt động đặc biệt
-        Outdoor = 3,      // Hoạt động ngoài trời
-        NapTime = 4       // Giờ ngủ trưa
-    }
 }
