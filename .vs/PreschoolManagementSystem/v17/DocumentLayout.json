@@ -34,8 +34,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -46,8 +50,7 @@
               "RelativeToolTip": "PreschoolManagementSystem.API\\Controllers\\StudentsController.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T07:28:31.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T07:28:31.197Z"
             },
             {
               "$type": "Document",
@@ -57,7 +60,7 @@
               "RelativeDocumentMoniker": "PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj",
               "ToolTip": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj",
               "RelativeToolTip": "PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-10-20T07:27:35.097Z",
               "EditorCaption": ""
@@ -72,8 +75,7 @@
               "RelativeToolTip": "PreschoolManagementSystem.API\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-17T06:39:44.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T06:39:44.553Z"
             },
             {
               "$type": "Document",
@@ -85,8 +87,7 @@
               "RelativeToolTip": "PreschoolManagementSystem.API\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-17T06:36:32.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T06:36:32.967Z"
             },
             {
               "$type": "Document",
@@ -98,8 +99,7 @@
               "RelativeToolTip": "PreschoolManagementSystem.API\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-17T06:36:30.264Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T06:36:30.264Z"
             },
             {
               "$type": "Document",
@@ -111,8 +111,7 @@
               "RelativeToolTip": "PreschoolManagementSystem.API\\Program.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T05:03:13.177Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T05:03:13.177Z"
             }
           ]
         }

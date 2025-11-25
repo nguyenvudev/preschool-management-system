@@ -6,6 +6,7 @@ namespace PreschoolManagementSystem.Application.Features.Students.Commands.Creat
     public sealed class CreateStudentCommandValidator : AbstractValidator<CreateStudentCommand>
     {
 
+        
         public CreateStudentCommandValidator()
         {
             RuleFor(x => x.Code)

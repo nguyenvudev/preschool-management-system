@@ -14,7 +14,7 @@ namespace PreschoolManagementSystem.Application.Interfaces.Repositories
         Task<List<User>> GetAllAsync();
         Task<PagedList<User>> GetPagedAsync(int page, int pageSize, string? search, string? role);
 
-            Task<User?> GetByPhoneNumberAsync(string phoneNumber); 
+        Task<User?> GetByPhoneNumberAsync(string phoneNumber); 
 
         
         Task<User> AddAsync(User user);

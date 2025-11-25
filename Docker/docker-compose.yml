@@ -6,7 +6,7 @@ services:
     container_name: preschool_sql
     environment:
       ACCEPT_EULA: "Y"
-      SA_PASSWORD: "YourStrong@Pass123"
+      SA_PASSWORD: "preschool@123"
     ports:
       - "1433:1433"
     volumes:
@@ -15,7 +15,7 @@ services:
   api:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile  
     container_name: preschool_api
     ports:
       - "5000:8080"
@@ -23,7 +23,7 @@ services:
       - sqlserver
     environment:
       ASPNETCORE_ENVIRONMENT: "Development"
-      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=PreschoolManagementDB;User=dev;Password=123;TrustServerCertificate=true;"
+      ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=PreschoolManagementDB;User=sa;Password=preschool@123;TrustServerCertificate=true;"
 
 volumes:
   sql_data:

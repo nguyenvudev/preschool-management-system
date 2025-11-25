@@ -16,7 +16,7 @@ namespace PreschoolManagementSystem.Infrastructure.Persistence.Configurations
             builder.Property(s => s.Code)
                 .IsRequired()
                 .HasMaxLength(50);
-
+    
             builder.Property(s => s.FullName)
                 .IsRequired()
                 .HasMaxLength(255);

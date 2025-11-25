@@ -1,11 +1,8 @@
-using PreschoolManagementSystem.Application.DTOs.Students;
 using PreschoolManagementSystem.Domain.Enums;
 
-namespace PreschoolManagementSystem.Application.DTOs.ClassRoom
+namespace  PreschoolManagementSystem.Application.DTOs.ClassRoom
 {
-
-
-    public class ClassroomResponse
+ public class ClassroomDetailResponse
     {
         public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;
@@ -20,5 +17,9 @@ namespace PreschoolManagementSystem.Application.DTOs.ClassRoom
         public string? Description { get; set; }
         public bool IsActive { get; set; }
         public DateTime CreatedAt { get; set; }
+        
+        // Additional details
+        // public List<ClassroomStudentResponse> Students { get; set; } = new();
+        // public List<WeeklyScheduleResponse> Schedules { get; set; } = new();
     }
 }

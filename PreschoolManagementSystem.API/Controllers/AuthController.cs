@@ -166,10 +166,9 @@ namespace PreschoolManagementSystem.WebAPI.Controllers
             Response.Cookies.Append("refreshToken", refreshToken, cookieOptions);
         }
 
-        // Thêm vào AuthController.cs
 
 [HttpPost("register")]
-[AllowAnonymous] // Không cần token để đăng ký
+[AllowAnonymous] 
 public async Task<ActionResult<ApiResponse<AuthResponse>>> Register(RegisterRequest request)
 {
     try
