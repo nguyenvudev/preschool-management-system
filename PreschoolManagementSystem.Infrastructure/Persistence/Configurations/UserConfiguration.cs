@@ -33,9 +33,9 @@ namespace PreschoolManagementSystem.Infrastructure.Data.Configurations
                 .HasMaxLength(255);
 
             builder.Property(u => u.Role)
-                .IsRequired()
-                .HasConversion<string>()
-                .HasMaxLength(50);
+                .IsRequired();
+                // .HasConversion<string>()
+                // .HasMaxLength(50);
 
             builder.Property(u => u.PhoneNumber)
                 .HasMaxLength(20);
