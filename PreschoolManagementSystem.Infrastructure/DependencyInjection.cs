@@ -27,9 +27,11 @@ namespace PreschoolManagementSystem.Infrastructure.Persistence
             // Application Services
             // Repositories
            services.AddScoped<IStudentRepository, StudentRepository>();
-            services.AddScoped<IStudentService, StudentService>();
+            // services.AddScoped<IStudentService, StudentService>();
 
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserService , UserService>();
+
             // services.AddScoped<IStudentRepository, StudentRepository>();
             // services.AddScoped<IClassroomRepository, ClassroomRepository>();
             // services.AddScoped<IHealthRecordRepository, HealthRecordRepository>();

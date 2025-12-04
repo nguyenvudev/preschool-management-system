@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "D:\\PreschoolManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|d:\\preschoolmanagementsystem\\preschoolmanagementsystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|solutionrelative:preschoolmanagementsystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\Controllers\\StudentsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PreschoolManagementSystem.API\\Controllers\\StudentsController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|d:\\preschoolmanagementsystem\\preschoolmanagementsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|solutionrelative:preschoolmanagementsystem.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PreschoolManagementSystem.API\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|d:\\preschoolmanagementsystem\\preschoolmanagementsystem.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|solutionrelative:preschoolmanagementsystem.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PreschoolManagementSystem.API\\appsettings.Development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|d:\\preschoolmanagementsystem\\preschoolmanagementsystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|solutionrelative:preschoolmanagementsystem.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PreschoolManagementSystem.API\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|d:\\preschoolmanagementsystem\\preschoolmanagementsystem.api\\preschoolmanagementsystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|solutionrelative:preschoolmanagementsystem.api\\preschoolmanagementsystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PreschoolManagementSystem.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|d:\\preschoolmanagementsystem\\preschoolmanagementsystem.api\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|solutionrelative:preschoolmanagementsystem.api\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|d:\\preschoolmanagementsystem\\preschoolmanagementsystem.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|solutionrelative:preschoolmanagementsystem.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|d:\\preschoolmanagementsystem\\preschoolmanagementsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CF377A9-10FE-41BF-9912-0FDB5AF173AE}|PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj|solutionrelative:preschoolmanagementsystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,32 +50,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StudentsController.cs",
-              "DocumentMoniker": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\Controllers\\StudentsController.cs",
-              "RelativeDocumentMoniker": "PreschoolManagementSystem.API\\Controllers\\StudentsController.cs",
-              "ToolTip": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\Controllers\\StudentsController.cs",
-              "RelativeToolTip": "PreschoolManagementSystem.API\\Controllers\\StudentsController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T07:28:31.197Z"
+              "DocumentIndex": 2,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\Dockerfile",
+              "RelativeDocumentMoniker": "PreschoolManagementSystem.API\\Dockerfile",
+              "ToolTip": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\Dockerfile",
+              "RelativeToolTip": "PreschoolManagementSystem.API\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-04T07:43:23.371Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "PreschoolManagementSystem.API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "PreschoolManagementSystem.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T07:40:25.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PreschoolManagementSystem.API.csproj",
               "DocumentMoniker": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj",
               "RelativeDocumentMoniker": "PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj",
               "ToolTip": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj",
               "RelativeToolTip": "PreschoolManagementSystem.API\\PreschoolManagementSystem.API.csproj",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-10-20T07:27:35.097Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "PreschoolManagementSystem.API\\Properties\\launchSettings.json",
@@ -75,11 +97,12 @@
               "RelativeToolTip": "PreschoolManagementSystem.API\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-17T06:39:44.553Z"
+              "WhenOpened": "2025-10-17T06:39:44.553Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "PreschoolManagementSystem.API\\appsettings.Development.json",
@@ -91,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\appsettings.json",
               "RelativeDocumentMoniker": "PreschoolManagementSystem.API\\appsettings.json",
@@ -99,11 +122,24 @@
               "RelativeToolTip": "PreschoolManagementSystem.API\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-17T06:36:30.264Z"
+              "WhenOpened": "2025-10-17T06:36:30.264Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "PreschoolManagementSystem.API\\Controllers\\StudentsController.cs",
+              "ToolTip": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "PreschoolManagementSystem.API\\Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T07:28:31.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PreschoolManagementSystem\\PreschoolManagementSystem.API\\Program.cs",
               "RelativeDocumentMoniker": "PreschoolManagementSystem.API\\Program.cs",
